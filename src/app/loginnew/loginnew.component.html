@@ -1,0 +1,43 @@
+<nb-layout>
+  <nb-layout-column>
+    <nb-card>
+      <nb-card-body>
+        <nb-auth-block style="margin:auto">
+          <div>
+            <h1 id="title" class="title">Login</h1>
+            <p class="sub-title">Hello! Log in with your username.</p>
+            <form #form="ngForm" aria-labelledby="title">
+              <div class="form-control-group">
+                <label class="label" for="input-username">Username:</label>
+                <input
+                  nbInput
+                  fullWidth
+                  name="username"
+                  id="input-username"
+                  placeholder="Username"
+                  autofocus
+                />
+              </div>
+
+              <div class="form-control-group">
+                <label class="label" for="input-password">Password:</label>
+                <input
+                  nbInput
+                  fullWidth
+                  name="password"
+                  type="password"
+                  id="input-password"
+                  placeholder="Password"
+                />
+              </div>
+
+              <button nbButton fullWidth status="success">
+                Log In
+              </button>
+            </form>
+          </div>
+        </nb-auth-block>
+      </nb-card-body>
+    </nb-card>
+  </nb-layout-column>
+</nb-layout>

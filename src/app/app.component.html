@@ -1,0 +1,6 @@
+<div *ngIf="isLogIn">
+  <router-outlet></router-outlet>
+</div>
+<div *ngIf="!isLogIn">
+  <loginnew></loginnew>
+</div>
